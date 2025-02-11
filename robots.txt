@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://luascfl.github.io/sitemap.xml.gz
+Sitemap: https://luascfl.github.io/tutorial-linkedin/sitemap.xml.gz
