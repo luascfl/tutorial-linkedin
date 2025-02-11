@@ -1,8 +1,8 @@
 input: .
 output: .retype
-url: https://luascfl.github.io/
+url: https://luascfl.github.io/tutorial-linkedin/
 branding:
-  title: Project Name
+  title: Tutorial LinkedIn
   label: Docs
 links:
 - text: Getting Started
