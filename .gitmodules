@@ -1,0 +1,18 @@
+[submodule "auto-confignotifications-linkedin"]
+	path = auto-confignotifications-linkedin
+	url = https://github.com/luascfl/auto-confignotifications-linkedin
+[submodule "auto-connect-linkedin"]
+	path = auto-connect-linkedin
+	url = https://github.com/luascfl/auto-connect-linkedin
+[submodule "auto-deletealerts-linkedin"]
+	path = auto-deletealerts-linkedin
+	url = https://github.com/luascfl/auto-deletealerts-linkedin
+[submodule "auto-deletenotifications-linkedin"]
+	path = auto-deletenotifications-linkedin
+	url = https://github.com/luascfl/auto-deletenotifications-linkedin
+[submodule "auto-followcompany-linkedin"]
+	path = auto-followcompany-linkedin
+	url = https://github.com/luascfl/auto-followcompany-linkedin
+[submodule "auto-updatejobalerts-linkedin"]
+	path = auto-updatejobalerts-linkedin
+	url = https://github.com/luascfl/auto-updatejobalerts-linkedin
