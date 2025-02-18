@@ -26,18 +26,18 @@ jobs:
         with:
           dotnet-version: '7.0.x'
 
+      - name: Install Retype globally
+        run: dotnet tool install retype --global
+
       - name: Build with Retype
-        uses: retypeapp/action-build@latest
-        with:
-          license: ${{ secrets.RETYPE_LICENSE_KEY }}
-          # Specify a fixed output directory
-          args: --output ./retype-dist
+        env:
+          RETYPE_LICENSE_KEY: ${{ secrets.RETYPE_LICENSE_KEY }}
+        run: retype build --output ./retype-dist
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: retype
-          # Reference the fixed output directory
           folder: ./retype-dist
           clean: true
           force: true
