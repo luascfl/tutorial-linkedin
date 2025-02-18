@@ -27,7 +27,7 @@ jobs:
           dotnet-version: '7.0.x'
 
       - name: Install Retype globally
-        run: dotnet tool install retype --global
+        run: dotnet tool install --global retypeapp
 
       - name: Build with Retype
         env:
