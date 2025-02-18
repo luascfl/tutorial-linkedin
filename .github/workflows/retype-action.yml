@@ -10,28 +10,31 @@ jobs:
     name: Publish to retype branch
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Required to push to the retype branch
+      contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: 'true'  # Only if using submodules
+          submodules: 'true'
 
-      - name: Initialize submodules  # Only if needed
+      - name: Initialize submodules
         run: git submodule update --init --recursive
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '7.0.x'  # Use single version as per Retype requirements
+          dotnet-version: '7.0.x'
 
       - name: Build with Retype
         uses: retypeapp/action-build@latest
         with:
-          license: ${{ secrets.RETYPE_LICENSE_KEY }}  # Use correct secret name
+          license: ${{ secrets.RETYPE_LICENSE_KEY }}
 
       - name: Deploy to GitHub Pages
-        uses: retypeapp/action-github-pages@latest
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          update-branch: true  # Creates branch if missing
+          branch: retype
+          folder: /tmp/tmp.wqHoJeqAwv  # Use the path from Retype's build output
+          clean: true
+          force: true
