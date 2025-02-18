@@ -24,7 +24,7 @@ jobs:
       - name: Install Retype
         run: npm install -g retype
       - name: Build with Retype
-        run: retype build --output .retype
+        run: /usr/local/bin/retype build --output .retype
       - name: Upload Retype site
         uses: actions/upload-artifact@v4
         with:
