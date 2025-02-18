@@ -1,9 +1,11 @@
 name: Publish Retype powered website to GitHub Pages
+
 on:
   workflow_dispatch:
   push:
     branches:
       - main
+
 jobs:
   build:
     name: Build with Retype
@@ -15,21 +17,14 @@ jobs:
           submodules: 'true'
       - name: Initialize and update submodules
         run: git submodule update --init --recursive
-      - name: Setup .NET 7.0 and 8.0
-        uses: actions/setup-dotnet@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          dotnet-version: |
-            7.0.x
-            8.0.x
-      - name: Cache NuGet packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.nuget/packages
-          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-nuget-
+          node-version: '16'
+      - name: Install Retype
+        run: npm install -g retype
       - name: Build with Retype
-        uses: retypeapp/action-build@v2.1.0
+        run: retype build --output .retype
       - name: Upload Retype site
         uses: actions/upload-artifact@v4
         with:
@@ -37,6 +32,7 @@ jobs:
           path: .retype
       - name: List uploaded artifact contents
         run: ls -la .retype
+
   deploy:
     name: Deploy to GitHub Pages
     needs: build
