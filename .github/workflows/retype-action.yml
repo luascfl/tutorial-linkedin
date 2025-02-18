@@ -1,11 +1,9 @@
 name: Publish Retype powered website to GitHub Pages
-
 on:
   workflow_dispatch:
   push:
     branches:
       - main
-
 jobs:
   build:
     name: Build with Retype
@@ -17,14 +15,21 @@ jobs:
           submodules: 'true'
       - name: Initialize and update submodules
         run: git submodule update --init --recursive
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Setup .NET 7.0 and 8.0
+        uses: actions/setup-dotnet@v3
         with:
-          node-version: '16'
-      - name: Install Retype
-        run: npm install -g retype
+          dotnet-version: |
+            7.0.x
+            8.0.x
+      - name: Cache NuGet packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
       - name: Build with Retype
-        run: /usr/local/bin/retype build --output .retype
+        uses: retypeapp/action-build@v2.0.0
       - name: Upload Retype site
         uses: actions/upload-artifact@v4
         with:
@@ -32,7 +37,6 @@ jobs:
           path: .retype
       - name: List uploaded artifact contents
         run: ls -la .retype
-
   deploy:
     name: Deploy to GitHub Pages
     needs: build
@@ -55,3 +59,24 @@ jobs:
           publish_dir: ./site
           branch: retype
           force_orphan: true
+Run retypeapp/action-build@v2.1.0
+Run ${GITHUB_ACTION_PATH}/build.sh
+Working directory is: /home/runner/work/tutorial-linkedin/tutorial-linkedin
+Installing Retype v2.1.0 using NPM package manager (linux-x64): done.
+Determining temporary target folder to place parsed documentation: /tmp/tmp.fFJ6KEaq1d
+Setting up build arguments: /retype.yml, done.
+Error: retype build command failed with exit code 1.
+Failed command and output:
+$ retype build --verbose --override {
+  "output": "/tmp/tmp.fFJ6KEaq1d"
+}
+  INPUT: /home/runner/work/tutorial-linkedin/tutorial-linkedin
+ OUTPUT: /tmp/tmp.fFJ6KEaq1d
+ERROR: Retype license is required.
+Node.JS wrapper: exiting with status 1.
+----
+Aborting documentation build process.
+Building documentation: error.
+Error: Process completed with exit code 1.
+
+eu nao tenho a licença, quero entender o pq q ele ta pedindo a licença
