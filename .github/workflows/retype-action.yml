@@ -59,24 +59,3 @@ jobs:
           publish_dir: ./site
           branch: retype
           force_orphan: true
-Run retypeapp/action-build@v2.1.0
-Run ${GITHUB_ACTION_PATH}/build.sh
-Working directory is: /home/runner/work/tutorial-linkedin/tutorial-linkedin
-Installing Retype v2.1.0 using NPM package manager (linux-x64): done.
-Determining temporary target folder to place parsed documentation: /tmp/tmp.fFJ6KEaq1d
-Setting up build arguments: /retype.yml, done.
-Error: retype build command failed with exit code 1.
-Failed command and output:
-$ retype build --verbose --override {
-  "output": "/tmp/tmp.fFJ6KEaq1d"
-}
-  INPUT: /home/runner/work/tutorial-linkedin/tutorial-linkedin
- OUTPUT: /tmp/tmp.fFJ6KEaq1d
-ERROR: Retype license is required.
-Node.JS wrapper: exiting with status 1.
-----
-Aborting documentation build process.
-Building documentation: error.
-Error: Process completed with exit code 1.
-
-eu nao tenho a licença, quero entender o pq q ele ta pedindo a licença
