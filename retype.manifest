@@ -1,0 +1,84 @@
+{
+  "version": "3.6.0",
+  "created": "2025-02-18T12:32:30Z",
+  "files": [
+    {
+      "path": ".nojekyll"
+    },
+    {
+      "path": "404.html"
+    },
+    {
+      "path": "auto-confignotifications-linkedin\\index.html"
+    },
+    {
+      "path": "auto-connect-linkedin\\index.html"
+    },
+    {
+      "path": "auto-deletealerts-linkedin\\index.html"
+    },
+    {
+      "path": "auto-deletealerts-linkedin\\license"
+    },
+    {
+      "path": "auto-deletenotifications-linkedin\\index.html"
+    },
+    {
+      "path": "auto-followcompany-linkedin\\index.html"
+    },
+    {
+      "path": "auto-updatejobalerts-linkedin\\index.html"
+    },
+    {
+      "path": "auto-updatejobalerts-linkedin\\license"
+    },
+    {
+      "path": "index.html"
+    },
+    {
+      "path": "resources\\css\\retype.css"
+    },
+    {
+      "path": "resources\\fonts\\Inter-italic-latin-var.woff2"
+    },
+    {
+      "path": "resources\\fonts\\Inter-roman-latin-var.woff2"
+    },
+    {
+      "path": "resources\\js\\config.js"
+    },
+    {
+      "path": "resources\\js\\lunr.js"
+    },
+    {
+      "path": "resources\\js\\prism.js"
+    },
+    {
+      "path": "resources\\js\\retype.js"
+    },
+    {
+      "path": "resources\\js\\search.json"
+    },
+    {
+      "path": "resources\\lunr.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\mermaid.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\prism.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\retype.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\retype.LICENSE.txt"
+    },
+    {
+      "path": "robots.txt"
+    },
+    {
+      "path": "sitemap.xml.gz"
+    }
+  ]
+}
