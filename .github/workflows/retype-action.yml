@@ -17,7 +17,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: 'true' # Ensures submodules are checked out
+          submodules: 'true' # Ensure submodules are checked out
 
       - name: Initialize and update submodules
         run: |
@@ -43,3 +43,5 @@ jobs:
         uses: retypeapp/action-github-pages@latest
         with:
           update-branch: true
+        env:
+          RETYPE_SKIP_CLEANUP: true # Prevent cleanup of submodule directories
