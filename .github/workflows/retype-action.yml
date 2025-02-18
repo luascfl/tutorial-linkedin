@@ -30,6 +30,8 @@ jobs:
           key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}-v2
       - name: Build with Retype
         uses: retypeapp/action-build@v2.0.0
+        env:
+          RETYPE_LICENSE_KEY: ${{ secrets.RETYPE_LICENSE_KEY }}  # Add this line
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
