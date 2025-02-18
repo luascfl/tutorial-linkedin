@@ -17,16 +17,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: 'true'
+          submodules: 'true' # Ensures submodules are checked out
 
-      - name: Clean up unnecessary files
+      - name: Initialize and update submodules
         run: |
-          rm -rf auto-confignotifications-linkedin || true
-          rm -rf auto-connect-linkedin || true
-          rm -rf auto-deletealerts-linkedin || true
-          rm -rf auto-deletenotifications-linkedin || true
-          rm -rf auto-followcompany-linkedin || true
-          rm -rf auto-updatejobalerts-linkedin || true
+          git submodule update --init --recursive
 
       - name: Setup .NET 7.0
         uses: actions/setup-dotnet@v3
