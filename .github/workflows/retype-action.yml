@@ -20,7 +20,13 @@ jobs:
           submodules: 'true'
 
       - name: Clean up unnecessary files
-        run: rm -rf auto-confignotifications-linkedin || true
+        run: |
+          rm -rf auto-confignotifications-linkedin || true
+          rm -rf auto-connect-linkedin || true
+          rm -rf auto-deletealerts-linkedin || true
+          rm -rf auto-deletenotifications-linkedin || true
+          rm -rf auto-followcompany-linkedin || true
+          rm -rf auto-updatejobalerts-linkedin || true
 
       - name: Setup .NET 7.0
         uses: actions/setup-dotnet@v3
@@ -34,6 +40,9 @@ jobs:
 
       - name: Build with Retype
         uses: retypeapp/action-build@latest
+
+      - name: Debug repository contents
+        run: ls -laR
 
       - name: Deploy to GitHub Pages
         uses: retypeapp/action-github-pages@latest
