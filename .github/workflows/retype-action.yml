@@ -21,26 +21,37 @@ jobs:
           dotnet-version: |
             7.0.x
             8.0.x
+      - name: Cache NuGet packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
       - name: Build with Retype
-        uses: retypeapp/action-build@latest
+        uses: retypeapp/action-build@v2.1.0
       - name: Upload Retype site
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: retype-site
           path: .retype
-
+      - name: List uploaded artifact contents
+        run: ls -la .retype
   deploy:
     name: Deploy to GitHub Pages
     needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    if: success()
     steps:
       - name: Download site artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: retype-site
           path: site
+      - name: List downloaded artifact contents
+        run: ls -la site
       - name: Deploy to retype branch
         uses: peaceiris/actions-gh-pages@v3
         with:
