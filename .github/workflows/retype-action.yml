@@ -32,9 +32,6 @@ jobs:
         with:
           dotnet-version: 8.0.x
 
-      - name: Install Retype
-        run: dotnet tool install --global retypeapp
-
       - name: Build with Retype
         uses: retypeapp/action-build@latest
 
