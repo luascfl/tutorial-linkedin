@@ -16,7 +16,7 @@ jobs:
       - name: Initialize submodules
         run: git submodule update --init --recursive
       - name: Install Retype
-        run: npm install -g retypeapp@2.3.0
+        run: npm install -g retypeapp@2.0.0
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
