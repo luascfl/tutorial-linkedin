@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/tutorial-linkedin">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.793251368743">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.793252648604">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Atualizar Alertas do LinkedIn</title>
-    <meta name="title" content="Atualizar Alertas do LinkedIn">
-    <meta name="description" content="Este projeto é um script em JavaScript projetado para automatizar o processo de atualização das configurações de alertas de emprego no LinkedIn.">
+    <title>Bookmarklet para Deletar Notifica&#231;&#245;es do LinkedIn</title>
+    <meta name="title" content="Bookmarklet para Deletar Notificações do LinkedIn">
+    <meta name="description" content="🇬🇧 Read this in English">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://luascfl.github.io/tutorial-linkedin/auto-updatejobalerts-linkedin/">
+    <link rel="canonical" href="https://luascfl.github.io/tutorial-linkedin/scripts-bookmarklets/auto-deletenotifications-linkedin/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://luascfl.github.io/tutorial-linkedin/auto-updatejobalerts-linkedin/">
-    <meta property="og:title" content="Atualizar Alertas do LinkedIn">
-    <meta property="og:description" content="Este projeto é um script em JavaScript projetado para automatizar o processo de atualização das configurações de alertas de emprego no LinkedIn.">
+    <meta property="og:url" content="https://luascfl.github.io/tutorial-linkedin/scripts-bookmarklets/auto-deletenotifications-linkedin/">
+    <meta property="og:title" content="Bookmarklet para Deletar Notificações do LinkedIn">
+    <meta property="og:description" content="🇬🇧 Read this in English">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://luascfl.github.io/tutorial-linkedin/auto-updatejobalerts-linkedin/">
-    <meta property="twitter:title" content="Atualizar Alertas do LinkedIn">
-    <meta property="twitter:description" content="Este projeto é um script em JavaScript projetado para automatizar o processo de atualização das configurações de alertas de emprego no LinkedIn.">
+    <meta property="twitter:url" content="https://luascfl.github.io/tutorial-linkedin/scripts-bookmarklets/auto-deletenotifications-linkedin/">
+    <meta property="twitter:title" content="Bookmarklet para Deletar Notificações do LinkedIn">
+    <meta property="twitter:description" content="🇬🇧 Read this in English">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=3.6.0.793251368743" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.793252648604" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.793251368743" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.793251368743" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.793252648604" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.793252648604" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.793252648604" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -50,7 +51,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-xl">
+                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Tutorial LinkedIn</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
                     </div>
@@ -164,25 +165,25 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="atualizar-alertas-do-linkedin" class="break-words">
+<doc-anchor-target id="bookmarklet-para-deletar-notificações-do-linkedin" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#atualizar-alertas-do-linkedin">#</doc-anchor-trigger>
-        <span>Atualizar Alertas do LinkedIn</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bookmarklet-para-deletar-notificações-do-linkedin">#</doc-anchor-trigger>
+        <span>Bookmarklet para Deletar Notificações do LinkedIn</span>
     </h1>
 </doc-anchor-target>
-<p>Este projeto é um script em JavaScript projetado para automatizar o processo de atualização das configurações de alertas de emprego no LinkedIn. Ele se concentra especificamente nos alertas com &quot;Frequência: Diário via e-mail e notificação&quot;, alterando-os para receber apenas notificações por e-mail e desativando a opção &quot;Receber notificações sobre vagas semelhantes&quot;.</p>
-<doc-anchor-target id="recursos-principais">
+<p><span class="docs-emoji">&#x1F1EC;&#x1F1E7;</span> <a href="readme-en/">Read this in English</a></p>
+<p>Este projeto fornece um bookmarklet para excluir notificações do LinkedIn de forma eficiente e em massa. O bookmarklet adiciona caixas de seleção a cada notificação, permitindo selecionar e excluir várias notificações simultaneamente. Esta é uma versão reempacotada de um bookmarklet originalmente criado por Ian Anderson Gray.</p>
+<doc-anchor-target id="principais-funcionalidades">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#recursos-principais">#</doc-anchor-trigger>
-        <span>Recursos Principais</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#principais-funcionalidades">#</doc-anchor-trigger>
+        <span>Principais Funcionalidades</span>
     </h2>
 </doc-anchor-target>
 <ul>
-<li>Atualiza automaticamente as configurações de alertas de emprego no LinkedIn.</li>
-<li>Seleciona os alertas ainda não configurados (apenas os alertas com frequência diária de e-mail e notificação).</li>
-<li>Altera a preferência de notificação para somente e-mail.</li>
-<li>Desativa a opção &quot;Receber notificações sobre vagas semelhantes&quot;.</li>
-<li>Lida com a paginação de alertas (botão &quot;Exibir mais&quot;).</li>
+<li><strong>Exclusão em Massa:</strong> Exclua várias notificações do LinkedIn com um único clique.</li>
+<li><strong>Selecionar Tudo:</strong> Selecione todas as notificações para facilitar a exclusão em massa.</li>
+<li><strong>Interface Amigável:</strong> As caixas de seleção são integradas de forma intuitiva à página de notificações do LinkedIn.</li>
+<li><strong>Suporte Multilíngue:</strong> Inclui versões em português e inglês.</li>
 </ul>
 <doc-anchor-target id="tecnologias-utilizadas">
     <h2>
@@ -200,8 +201,7 @@
     </h2>
 </doc-anchor-target>
 <ul>
-<li>Um navegador moderno (Chrome, Firefox, etc.) com JavaScript habilitado.</li>
-<li>Uma conta no LinkedIn com alertas de emprego configurados.</li>
+<li>Um navegador web (Chrome, Firefox, Safari, etc.).</li>
 </ul>
 <doc-anchor-target id="instalação">
     <h2>
@@ -209,12 +209,28 @@
         <span>Instalação</span>
     </h2>
 </doc-anchor-target>
+<p>Este projeto não requer uma instalação tradicional. Em vez disso, o bookmarklet é adicionado diretamente ao navegador:</p>
 <ol>
-<li><strong>Baixe o script:</strong> Baixe <code v-pre>Atualizar alertas do Linkedin.js</code> deste repositório.</li>
-<li><strong>Abra o LinkedIn:</strong> Faça login na sua conta do LinkedIn e navegue até a página de alertas de emprego.</li>
-<li><strong>Abra as Ferramentas de Desenvolvimento:</strong> Abra as ferramentas de desenvolvimento do navegador (geralmente pressionando F12).</li>
-<li><strong>Vá para o Console:</strong> Navegue até a aba &quot;Console&quot; nas ferramentas de desenvolvimento.</li>
-<li><strong>Cole e Execute:</strong> Cole o conteúdo de <code v-pre>Atualizar alertas do Linkedin.js</code> no console e pressione Enter.</li>
+<li><p><strong>Escolha o idioma:</strong> Selecione o código do bookmarklet correspondente ao seu idioma preferido:</p>
+<ul>
+<li><strong>Português:</strong> Use o código do arquivo <code v-pre>pt_Bookmarklet (Selecione o código e arraste para a barra de favoritos) Deletar notificações LinkedIn.js</code>.</li>
+<li><strong>Inglês:</strong> Use o código do arquivo <code v-pre>en_Bookmarklet (Select code and drag to bookmarks) Delete LinkedIn Notifications.js</code>.</li>
+</ul>
+</li>
+<li><p><strong>Selecione o Código do Bookmarklet:</strong> Copie o código JavaScript inteiro do arquivo escolhido. Para selecionar tudo, use CTRL+A. Por exemplo, a versão em português é:</p>
+</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">javascript:(function(){if(!window.location.href.includes('/notifications/?filter=all%27')){window.location.href=%27https://www.linkedin.com/notifications/?filter=all%27;alert(%27Clique no bookmarklet novamente após a página carregar%27);return;}function addCheckboxes(){document.querySelectorAll(&quot;.nt-card-list article.nt-card&quot;).forEach(e=&gt;{if(e.previousElementSibling&amp;&amp;&quot;INPUT&quot;===e.previousElementSibling.tagName&amp;&amp;&quot;checkbox&quot;===e.previousElementSibling.type)return;e.style.marginLeft=&quot;40px&quot;;let t=document.createElement(&quot;input&quot;);t.type=&quot;checkbox&quot;,t.style.opacity=&quot;1&quot;,t.style.marginRight=&quot;5px&quot;,t.style.pointerEvents=&quot;auto&quot;,t.style.width=&quot;20px&quot;,t.style.height=&quot;20px&quot;,t.style.marginLeft=&quot;10px&quot;,e.parentNode.insertBefore(t,e)})}function addControlButtons(){let e=document.querySelector(&quot;.artdeco-card.nt-pill-list.mb3&quot;);if(e){if(e.querySelector('%27button[onclick*=&quot;toggleSelectCheckboxes&quot;], button[onclick*=&quot;deleteSelectedNotifications&quot;]%27'))return;let t=document.createElement(&quot;button&quot;);t.innerText=&quot;Selecionar Tudo&quot;,t.onclick=toggleSelectCheckboxes,t.className=&quot;artdeco-pill artdeco-pill--slate artdeco-pill--3 artdeco-pill--choice nt-pill&quot;;let n=document.createElement(&quot;button&quot;);n.innerText=&quot;Excluir Notificações&quot;,n.onclick=deleteSelectedNotifications,n.className=&quot;artdeco-pill artdeco-pill--slate artdeco-pill--3 artdeco-pill--choice nt-pill&quot;,e.prepend(n,t)}}function toggleSelectCheckboxes(){let e=document.querySelectorAll(&quot;.nt-card-list input[type='%27checkbox%27']&quot;),t=Array.from(e).every(e=&gt;e.checked);e.forEach(e=&gt;e.checked=!t)}function deleteSelectedNotifications(){Array.from(document.querySelectorAll(&quot;.nt-card-list article.nt-card&quot;)).forEach((e,t)=&gt;{let n=e.previousElementSibling;n&amp;&amp;n.checked&amp;&amp;setTimeout(()=&gt;{let t=e.querySelector('%27a[href=&quot;#trash-medium&quot;]');t&amp;&amp;t.parentNode.parentNode.click()},500*t)})}addCheckboxes(),addControlButtons()})();</code></pre>
+</doc-codeblock></div>
+<ol start="3">
+<li>Arraste o código para a barra de favoritos do navegador para criar um novo bookmarklet.</li>
+</ol>
+<ul>
+<li>Se estiver na pasta de favoritos desejada com o código copiado, cole-o lá.</li>
+</ul>
+<ol start="4">
+<li><strong>Dê um Nome:</strong> Dê ao seu bookmarklet um nome descritivo (por exemplo, &quot;Apagar Notificações LinkedIn&quot; ou &quot;Delete LinkedIn Notifications&quot;).</li>
 </ol>
 <doc-anchor-target id="uso">
     <h2>
@@ -222,46 +238,20 @@
         <span>Uso</span>
     </h2>
 </doc-anchor-target>
-<p>O script processará automaticamente seus alertas de emprego. O console exibirá mensagens indicando o progresso, incluindo quaisquer erros encontrados. <strong>Feche as ferramentas de desenvolvimento assim que o script for concluído.</strong></p>
-<doc-anchor-target id="bookmarklet">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bookmarklet">#</doc-anchor-trigger>
-        <span>Bookmarklet</span>
-    </h2>
-</doc-anchor-target>
-<p>Este projeto não requer nenhuma instalação no sentido tradicional. Em vez disso, você instala o bookmarklet diretamente no seu navegador:</p>
 <ol>
-<li><strong>Selecione o Código do Bookmarklet:</strong> Selecione todo o código JavaScript do arquivo escolhido. Para selecionar tudo, use CTRL+A.</li>
-</ol>
-<ul>
-<li>Use o código do arquivo <code v-pre>Bookmarklet (Selecione o código e arraste para a barra de favoritos) Atualizar alertas do LinkedIn.js</code>.</li>
-</ul>
-<ol start="2">
-<li>Arraste o código para sua barra de favoritos para criar um novo bookmarklet.</li>
-</ol>
-<ul>
-<li>Se você estiver na pasta de favoritos desejada com o código copiado, cole-o.</li>
-</ul>
-<ol start="3">
-<li><strong>Dê um Nome:</strong> Dê ao seu favorito um nome descritivo (por exemplo, &quot;Atualizar alertas do LinkedIn&quot;).</li>
-</ol>
-<doc-anchor-target id="uso-1">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#uso-1">#</doc-anchor-trigger>
-        <span>Uso</span>
-    </h2>
-</doc-anchor-target>
-<ol>
-<li><p><strong>Navegue até os alertas do LinkedIn:</strong> Vá para a página de alertas de vagas do LinkedIn (<code v-pre>https://www.linkedin.com/jobs/jam/</code>).</p>
+<li><p><strong>Acesse as Notificações do LinkedIn:</strong> Navegue até a página de notificações do LinkedIn (<code v-pre>https://www.linkedin.com/notifications/?filter=all</code>).</p>
 </li>
-<li><p><strong>Clique no Bookmarklet:</strong> Clique no bookmarklet que você criou. Pode aparecer uma mensagem pedindo para clicar novamente após o carregamento da página. Clique no bookmarklet novamente após uma breve espera. Caixas de seleção aparecerão ao lado de cada notificação.</p>
+<li><p><strong>Clique no Bookmarklet:</strong> Clique no bookmarklet que você criou. Uma mensagem pode aparecer pedindo para clicar novamente após a página carregar. Clique novamente após um curto período. As caixas de seleção aparecerão ao lado de cada notificação.</p>
 </li>
 </ol>
 <ul>
-<li>Se você não estiver em (<code v-pre>https://www.linkedin.com/jobs/jam/</code>), o script irá redirecioná-lo para a página.</li>
+<li>Se você não estiver em (<code v-pre>https://www.linkedin.com/notifications/?filter=all</code>), o script o redirecionará para a página.</li>
 </ul>
 <ol start="3">
-<li><strong>Clique em &quot;Atualizar alertas do LinkedIn&quot;:</strong> Clique no botão apropriado para atualizar os alertas automaticamente.</li>
+<li><p><strong>Selecione as Notificações:</strong> Marque as caixas ao lado das notificações que deseja excluir.</p>
+</li>
+<li><p><strong>Clique em &quot;Excluir Notificações&quot;:</strong> Clique no botão apropriado para excluir as notificações selecionadas.</p>
+</li>
 </ol>
 <doc-anchor-target id="estrutura-do-projeto">
     <h2>
@@ -269,35 +259,28 @@
         <span>Estrutura do Projeto</span>
     </h2>
 </doc-anchor-target>
-<p>O projeto consiste em dois arquivos:</p>
 <ul>
-<li><code v-pre>Atualizar alertas do Linkedin.js</code>: O script principal em JavaScript contendo a lógica de automação.</li>
-<li><code v-pre>Bookmarklet (Selecione o código e arraste para a barra de favoritos) Atualizar alertas do LinkedIn.js</code>: A versão do código em bookmarklet.</li>
-<li><code v-pre>LICENSE</code>: O arquivo da Licença MIT.</li>
+<li><code v-pre>LICENSE</code>: Contém as informações da Licença MIT.</li>
+<li><code v-pre>README.md</code>: Este arquivo.</li>
+<li><code v-pre>README.md</code>: A versão em inglês deste arquivo.</li>
+<li><code v-pre>pt_Bookmarklet (Selecione o código e arraste para a barra de favoritos) Deletar notificações LinkedIn.js</code>: A versão em português do código do bookmarklet.</li>
+<li><code v-pre>en_Bookmarklet (Select code and drag to bookmarks) Delete LinkedIn Notifications.js</code>: A versão em inglês do código do bookmarklet.</li>
 </ul>
+<doc-anchor-target id="contribuição">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#contribuição">#</doc-anchor-trigger>
+        <span>Contribuição</span>
+    </h2>
+</doc-anchor-target>
+<p>Este projeto é baseado no código de Ian Anderson Gray (<a href="https://iag.me/socialmedia/how-to-bulk-delete-your-linkedin-notifications/">https://iag.me/socialmedia/how-to-bulk-delete-your-linkedin-notifications/</a>). Todos os créditos vão para o seu blog.</p>
+<p>Contribuições são bem-vindas.</p>
 <doc-anchor-target id="licença">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#licença">#</doc-anchor-trigger>
         <span>Licença</span>
     </h2>
 </doc-anchor-target>
-<p>Este projeto está licenciado sob a Licença MIT - consulte o arquivo <a href="license">LICENSE</a> para obter detalhes.</p>
-<doc-anchor-target id="mensagens-de-erro-e-solução-de-problemas">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#mensagens-de-erro-e-solução-de-problemas">#</doc-anchor-trigger>
-        <span>Mensagens de Erro e Solução de Problemas</span>
-    </h2>
-</doc-anchor-target>
-<p>O script inclui registros no console para ajudar na solução de problemas. Possíveis erros e seus significados:</p>
-<ul>
-<li><code v-pre>&quot;O container de alertas não foi encontrado.&quot;</code>: O script não conseguiu localizar o elemento HTML esperado que contém os alertas de emprego. Isso pode indicar mudanças na estrutura do site do LinkedIn.</li>
-<li><code v-pre>&quot;Botão 'Exibir mais' clicado.&quot;</code>: Esta mensagem confirma que o script clicou com sucesso no botão para carregar mais alertas.</li>
-<li><code v-pre>&quot;Botão de editar não encontrado para o alerta.&quot;</code>: O script não conseguiu encontrar o botão de edição para um alerta específico. Isso pode ser devido a uma mudança na interface do LinkedIn.</li>
-<li><code v-pre>&quot;Label 'E-mail' não encontrado.&quot;</code>: O script falhou ao encontrar a opção de notificação por e-mail.</li>
-<li><code v-pre>&quot;Toggle 'Receber notificações sobre vagas semelhantes' não encontrado ou já desativado.&quot;</code>: O script não conseguiu encontrar o toggle para desativar notificações sobre vagas semelhantes, ou o toggle já estava desativado.</li>
-<li><code v-pre>&quot;Botão 'Salvar' não encontrado.&quot;</code>: O script não conseguiu encontrar o botão &quot;Salvar&quot;.</li>
-</ul>
-<p>Se você encontrar erros, verifique o console para obter mensagens mais detalhadas e considere inspecionar o HTML da página do LinkedIn para ver se os seletores usados pelo script ainda são válidos. Este script depende fortemente da estrutura do site do LinkedIn; quaisquer alterações no layout do LinkedIn provavelmente o quebrarão.</p>
+<p>Este projeto está licenciado sob a Licença MIT - consulte o arquivo <code v-pre>LICENSE</code> para detalhes.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -307,20 +290,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../1-registro-na-plataforma/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">1. Registro na Plataforma Linked​In</span>
+                                                <span class="block mt-1">Tutorial: Capacitação do Perfil no Linked​In</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../auto-followcompany-linkedin/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../scripts-bookmarklets/auto-deletenotifications-linkedin/readme-en/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Bot de Seguir Empresas no Linked​In</span>
+                                                <span class="block mt-1">Linked​In Notification Deleter Bookmarklet</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -364,6 +347,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Atualizar Alertas do LinkedIn", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Bookmarklet para Deletar Notificações do LinkedIn", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
