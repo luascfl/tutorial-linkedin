@@ -16,3 +16,21 @@
 [submodule "auto-updatejobalerts-linkedin"]
 	path = auto-updatejobalerts-linkedin
 	url = https://github.com/luascfl/auto-updatejobalerts-linkedin.git
+[submodule "Scripts, Bookmarklets/auto-confignotifications-linkedin"]
+	path = Scripts, Bookmarklets/auto-confignotifications-linkedin
+	url = https://github.com/luascfl/auto-confignotifications-linkedin
+[submodule "Scripts, Bookmarklets/auto-deletealerts-linkedin"]
+	path = Scripts, Bookmarklets/auto-deletealerts-linkedin
+	url = https://github.com/luascfl/auto-deletealerts-linkedin
+[submodule "Scripts, Bookmarklets/auto-deletenotifications-linkedin"]
+	path = Scripts, Bookmarklets/auto-deletenotifications-linkedin
+	url = https://github.com/luascfl/auto-deletenotifications-linkedin
+[submodule "Scripts, Bookmarklets/auto-followcompany-linkedin"]
+	path = Scripts, Bookmarklets/auto-followcompany-linkedin
+	url = https://github.com/luascfl/auto-followcompany-linkedin
+[submodule "Scripts, Bookmarklets/auto-updatejobalerts-linkedin"]
+	path = Scripts, Bookmarklets/auto-updatejobalerts-linkedin
+	url = https://github.com/luascfl/auto-updatejobalerts-linkedin
+[submodule "Scripts, Bookmarklets/auto-connect-linkedin"]
+	path = Scripts, Bookmarklets/auto-connect-linkedin
+	url = https://github.com/luascfl/auto-connect-linkedin
