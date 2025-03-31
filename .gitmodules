@@ -18,19 +18,31 @@
 	url = https://github.com/luascfl/auto-updatejobalerts-linkedin.git
 [submodule "Scripts, Bookmarklets/auto-confignotifications-linkedin"]
 	path = Scripts, Bookmarklets/auto-confignotifications-linkedin
-	url = https://github.com/luascfl/auto-confignotifications-linkedin
+	url = https://github.com/luascfl/auto-confignotifications-linkedin.git
 [submodule "Scripts, Bookmarklets/auto-deletealerts-linkedin"]
 	path = Scripts, Bookmarklets/auto-deletealerts-linkedin
-	url = https://github.com/luascfl/auto-deletealerts-linkedin
+	url = https://github.com/luascfl/auto-deletealerts-linkedin.git
 [submodule "Scripts, Bookmarklets/auto-deletenotifications-linkedin"]
 	path = Scripts, Bookmarklets/auto-deletenotifications-linkedin
-	url = https://github.com/luascfl/auto-deletenotifications-linkedin
+	url = https://github.com/luascfl/auto-deletenotifications-linkedin.git
 [submodule "Scripts, Bookmarklets/auto-followcompany-linkedin"]
 	path = Scripts, Bookmarklets/auto-followcompany-linkedin
-	url = https://github.com/luascfl/auto-followcompany-linkedin
+	url = https://github.com/luascfl/auto-followcompany-linkedin.git
 [submodule "Scripts, Bookmarklets/auto-updatejobalerts-linkedin"]
 	path = Scripts, Bookmarklets/auto-updatejobalerts-linkedin
-	url = https://github.com/luascfl/auto-updatejobalerts-linkedin
+	url = https://github.com/luascfl/auto-updatejobalerts-linkedin.git
 [submodule "Scripts, Bookmarklets/auto-connect-linkedin"]
 	path = Scripts, Bookmarklets/auto-connect-linkedin
-	url = https://github.com/luascfl/auto-connect-linkedin
+	url = https://github.com/luascfl/auto-connect-linkedin.git
+[submodule "Scripts, Bookmarklets/auto-expandtrendingtopics-linkedin"]
+	path = Scripts, Bookmarklets/auto-expandtrendingtopics-linkedin
+	url = https://github.com/luascfl/auto-expandtrendingtopics-linkedin
+[submodule "Scripts, Bookmarklets/auto-filterjobresults-linkedin"]
+	path = Scripts, Bookmarklets/auto-filterjobresults-linkedin
+	url = https://github.com/luascfl/auto-filterjobresults-linkedin
+[submodule "Scripts, Bookmarklets/auto-ignorefakejobs-linkedin"]
+	path = Scripts, Bookmarklets/auto-ignorefakejobs-linkedin
+	url = https://github.com/luascfl/auto-ignorefakejobs-linkedin
+[submodule "Scripts, Bookmarklets/auto-savejobalerts-linkedin"]
+	path = Scripts, Bookmarklets/auto-savejobalerts-linkedin
+	url = https://github.com/luascfl/auto-savejobalerts-linkedin
